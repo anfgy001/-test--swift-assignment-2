@@ -37,46 +37,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-y9-sOw">
-                                <rect key="frame" x="20" y="325" width="335" height="17"/>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-y9-sOw">
+                                <rect key="frame" x="16" y="559" width="335" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-zJ-KOS">
-                                <rect key="frame" x="67" y="133" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBR-he-oGe">
-                                <rect key="frame" x="67" y="133" width="240" height="128"/>
+                                <rect key="frame" x="50" y="133" width="275" height="358"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAb-vA-esM">
-                                <rect key="frame" x="166" y="84" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ultimate Cosplay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAb-vA-esM">
+                                <rect key="frame" x="122" y="81" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-zJ-KOS">
+                                <rect key="frame" x="50" y="133" width="275" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="0XM-y9-sOw" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="20" symbolic="YES" id="Tsc-yG-G1q"/>
-                            <constraint firstItem="0XM-y9-sOw" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="jWN-iV-94e"/>
-                            <constraint firstAttribute="trailing" secondItem="0XM-y9-sOw" secondAttribute="trailing" constant="20" symbolic="YES" id="tHV-ZD-HQj"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.47174817664412311" green="0.96806140977483957" blue="0.89841097508194812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" title="Home" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
+                        <outlet property="detailNavigationItem" destination="mOI-FS-AaM" id="cBr-1Y-3Fj"/>
                         <outlet property="imageView" destination="PBR-he-oGe" id="TfN-MX-Voj"/>
+                        <outlet property="pageLabel" destination="vAb-vA-esM" id="vbP-Oz-drn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="972"/>
+            <point key="canvasLocation" x="-39.200000000000003" y="971.96401799100454"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -177,7 +175,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsp-fy-S1O">
-                                <rect key="frame" x="166" y="88" width="54" height="21"/>
+                                <rect key="frame" x="166" y="88" width="54" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -202,12 +200,14 @@
                     <navigationItem key="navigationItem" title="Detail" id="3Ru-Mz-avb"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="73J-u2-PNJ" id="gRb-83-6dP"/>
+                        <outlet property="detailNavigationItem" destination="3Ru-Mz-avb" id="9Dd-C5-4Jb"/>
                         <outlet property="imageView" destination="hEj-yk-V9E" id="rto-Mu-wnF"/>
+                        <outlet property="pageLabel" destination="dsp-fy-S1O" id="y65-4O-7Zr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTD-Jb-ulb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="972"/>
+            <point key="canvasLocation" x="708" y="971.96401799100454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t5M-FA-h1s">
@@ -287,7 +287,9 @@
                     <navigationItem key="navigationItem" title="Detail" id="GDU-hR-CTc"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="OPz-Wb-7DG" id="LmY-Zf-4G8"/>
+                        <outlet property="detailNavigationItem" destination="GDU-hR-CTc" id="lVP-zy-906"/>
                         <outlet property="imageView" destination="USB-Ry-XrT" id="EQY-uR-Qau"/>
+                        <outlet property="pageLabel" destination="oLW-u4-7lF" id="bO8-aR-HS2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cfi-hi-OqV" sceneMemberID="firstResponder"/>
@@ -356,7 +358,9 @@
                     <navigationItem key="navigationItem" title="Detail" id="AcV-1B-gsN"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="jzQ-8p-GDw" id="Prr-H2-kkZ"/>
+                        <outlet property="detailNavigationItem" destination="AcV-1B-gsN" id="CDd-r6-i3b"/>
                         <outlet property="imageView" destination="Fdo-6q-RD9" id="Lnh-Ji-Soc"/>
+                        <outlet property="pageLabel" destination="R2i-pr-KC2" id="aBP-NZ-O39"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUw-Oc-G3q" sceneMemberID="firstResponder"/>
@@ -425,7 +429,9 @@
                     <navigationItem key="navigationItem" title="Detail" id="gim-gD-YH0"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="Ba3-eI-Q5y" id="ee3-5c-x3e"/>
+                        <outlet property="detailNavigationItem" destination="gim-gD-YH0" id="KPf-NE-cxT"/>
                         <outlet property="imageView" destination="uRv-0e-5u7" id="RKp-2F-3To"/>
+                        <outlet property="pageLabel" destination="l0e-1j-Qzd" id="zN7-JW-Yym"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Li-r4-dh9" sceneMemberID="firstResponder"/>
@@ -494,7 +500,9 @@
                     <navigationItem key="navigationItem" title="Detail" id="k5i-IE-0FA"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="Toe-3y-wbf" id="RzZ-AI-HPs"/>
+                        <outlet property="detailNavigationItem" destination="k5i-IE-0FA" id="k0f-3v-y2m"/>
                         <outlet property="imageView" destination="Q0U-M1-TOp" id="883-Pv-cJi"/>
+                        <outlet property="pageLabel" destination="9jk-TN-f75" id="tCK-Oo-bHG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a86-xl-5Ll" sceneMemberID="firstResponder"/>
